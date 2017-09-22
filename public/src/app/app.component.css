@@ -1,0 +1,48 @@
+#wrapper
+{
+	background-color: #dddddd;
+}
+
+#wrapper h1
+{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#scrollbox
+{
+	overflow-y: scroll;
+	border: 1px solid black;
+	margin-left: 10px;
+	height: 400px;
+	width: 700px;
+}
+
+#desc
+{
+	width: 600px;
+}
+
+#addNote
+{
+	background-color: green;
+	color: white;
+}
+
+form
+{
+	margin-left: 10px;
+	padding-top: 20px;
+}
+
+form span
+{
+	margin-left: 40px;
+}
+
+header
+{
+	margin: 10px;
+	background-color: white;
+	height: 100px;
+}

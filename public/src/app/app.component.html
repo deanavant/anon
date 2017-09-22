@@ -1,0 +1,22 @@
+<div id="wrapper">
+  <h1>{{myTitle}}</h1>
+  <header>
+    <form name='myForm' (submit)="onSubmit()" #myForm='ngForm'>
+      <label>Note:</label>
+      <input type="text" name="desc" id="desc"
+        required 
+        minlength="3"
+        [(ngModel)]='note.desc'
+        #desc="ngModel">
+      <input type="submit" value="Add Note" id="addNote" [disabled]='myForm.invalid'>
+      <p>
+        <span *ngIf="myForm.invalid" style="color: red">Min 3 chars</span>
+      </p>
+    </form>
+  </header>
+
+  <div id="scrollbox">
+    <router-outlet></router-outlet>
+    <app-notelist></app-notelist>
+  </div>
+</div>

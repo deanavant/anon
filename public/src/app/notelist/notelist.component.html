@@ -1,0 +1,4 @@
+<div class="notebox" *ngFor="let note of _anotes.notes">
+	<h5>Noted on {{note.created_on | date:'medium' }}</h5>
+	<p>{{note.desc}}</p>
+</div>
