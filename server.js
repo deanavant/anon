@@ -33,7 +33,7 @@ app.get('/notes', function(req, res){
 });
 
 app.post('/notes', function(req,res){
-	var note = new Anote( { desc:req.body.desc } );
+	var note = new Anote( { desc:req.body.desc, created_on:Date.now() } );
 	note.save(function(err){
 		if(err){
 			console.log('***app.post /notes note.save:' + err);
